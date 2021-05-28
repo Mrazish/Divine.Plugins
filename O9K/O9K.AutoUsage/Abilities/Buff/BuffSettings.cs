@@ -28,6 +28,13 @@
             this.OnAttack.AddTranslation(Lang.Cn, "在攻击时使用");
             this.OnAttack.AddTooltipTranslation(Lang.Cn, "当英雄攻击时使用能力");
 
+            this.OnAttackCreeps = menu.GetOrAdd(new MenuSwitcher("Use on attack creeps"));
+            this.OnAttackCreeps.SetTooltip("Use ability when hero is attacking creeps");
+            this.OnAttackCreeps.AddTranslation(Lang.Ru, "Использовать при атаке крипов");
+            this.OnAttackCreeps.AddTooltipTranslation(Lang.Ru, "Использовать способность, когда цель атакует крипов");
+            this.OnAttackCreeps.AddTranslation(Lang.Cn, "在攻击时使用");
+            this.OnAttackCreeps.AddTooltipTranslation(Lang.Cn, "当英雄攻击时使用能力");
+            
             if (ability.BuffsAlly)
             {
                 if (ability.BuffsOwner)
