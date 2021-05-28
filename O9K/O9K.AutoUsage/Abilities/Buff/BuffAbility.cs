@@ -83,7 +83,7 @@
                     continue;
                 }
 
-                if (!this.settings.OnSight && (!this.settings.OnAttack || !ally.IsAttackingHero()))
+                if (!this.settings.OnSight && (!this.settings.OnAttack || !ally.IsAttackingHero()) && (!this.settings.OnAttackCreeps || !ally.IsAttacking()))
                 {
                     return false;
                 }
