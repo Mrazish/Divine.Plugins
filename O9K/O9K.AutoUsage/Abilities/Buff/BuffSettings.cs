@@ -138,6 +138,8 @@
         public MenuSlider MpThreshold { get; }
 
         public MenuSwitcher OnAttack { get; }
+        
+        public MenuSwitcher OnAttackCreeps { get; }
 
         public MenuSwitcher OnSight { get; }
 
